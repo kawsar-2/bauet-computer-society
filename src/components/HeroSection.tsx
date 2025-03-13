@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import MatrixBackground from "./MatrixBackground";
 
 interface HeroSectionProps {
   title?: string;
@@ -62,15 +61,10 @@ const HeroSection = ({
 
   return (
     <section
-      className={`w-full min-h-[800px] flex items-center justify-center py-20 px-4 md:px-8 lg:px-16 relative overflow-hidden ${theme === "dark" ? "bg-gray-900" : "bg-gray-50"}`}
+      className={`w-full min-h-[800px] flex items-center justify-center py-20 px-4 md:px-8 lg:px-16 ${theme === "dark" ? "bg-gray-900" : "bg-gray-50"}`}
     >
-      {/* Matrix Background Animation */}
-      <MatrixBackground
-        className={theme === "dark" ? "text-blue-500" : "text-purple-600"}
-      />
-
       <motion.div
-        className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 z-10"
+        className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
