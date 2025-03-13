@@ -76,7 +76,7 @@ export default function Home() {
                   >
                     <div className="aspect-video w-full overflow-hidden">
                       <img
-                        src={`https://images.unsplash.com/photo-${1550000000000 + item * 100}?w=600&q=80`}
+                        src={`https://images.unsplash.com/photo-${1550000000000 + item * 100000}?w=600&q=80`}
                         alt={`Project ${item}`}
                         className="w-full h-full object-cover transition-transform hover:scale-105"
                       />
